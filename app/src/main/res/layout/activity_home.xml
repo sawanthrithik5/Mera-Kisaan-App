@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".farmer.HomeActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"        >
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:textColor="#ffffff"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            />
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/search"
+            android:layout_marginLeft="60dp"
+            />
+        <ImageView
+            android:id="@+id/home_trending"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/trending"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/home_logout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logout"
+            android:layout_marginLeft="10dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_above="@+id/bottom_navigation_view"
+        android:layout_below="@+id/home_toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menu="@menu/menu_nevigation_item"
+        app:itemIconSize="20dp"
+        app:elevation="20dp"
+        android:clickable="true"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/color"
+        app:itemTextColor="@color/color"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

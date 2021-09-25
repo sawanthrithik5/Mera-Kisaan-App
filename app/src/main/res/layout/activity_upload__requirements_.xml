@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".company.UploadRequirementsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/crop_image"
+                android:layout_width="410dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/requirements"/>
+            <TextView
+                android:id="@+id/req_crop_details"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Product Details"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/crop_image"/>
+            <EditText
+                android:id="@+id/req_crop_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/req_crop_details"
+                android:hint="Crop Name"/>
+            <EditText
+                android:id="@+id/req_crop_lastDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/req_crop_name"
+                android:hint="Requirement last date " />
+            <EditText
+                android:id="@+id/req_crop_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/req_crop_lastDate"
+                android:hint="Quantity you Required in KG" />
+            <EditText
+                android:id="@+id/req_crop_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/req_crop_quantity"
+                android:hint="How much you pay for it" />
+            <Button
+                android:id="@+id/req_crop_upload"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Upload"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:textColor="#000000"
+                android:layout_below="@+id/req_crop_price"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

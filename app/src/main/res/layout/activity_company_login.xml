@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".company.CompanyLoginActivity">
+    <ImageView
+        android:id="@+id/clogin_page"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/sellerlogin"/>
+    <EditText
+        android:id="@+id/clogin_Username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/input"
+        android:hint="Please enter your UserName"
+        android:textColorHint="#000000"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/clogin_page"/>
+    <EditText
+        android:id="@+id/clogin_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:background="@drawable/input"
+        android:hint="Please enter your Password"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/clogin_Username"/>
+    <Button
+        android:id="@+id/clogin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/clogin_password"
+        android:background="@drawable/button"/>
+    <TextView
+        android:id="@+id/clogin_NotAUser"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        android:text="New user ? Register"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/clogin_button"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>

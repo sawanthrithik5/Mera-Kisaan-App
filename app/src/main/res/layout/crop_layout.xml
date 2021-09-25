@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/cropImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="40dp"
+            android:foregroundGravity="center"/>
+        <TextView
+            android:id="@+id/cropName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Crop Name"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/cropImage"/>
+        <TextView
+            android:id="@+id/cropDescription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Crop Description"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/cropName"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cropDescription">
+            <TextView
+                android:id="@+id/cropQuantity"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:text="Crop Quantity"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/cropPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:paddingTop="10dp"
+                android:text="Crop Price"
+                android:textSize="20dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
